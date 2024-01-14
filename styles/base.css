@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poiret+One&display=swap');
+
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    padding-left: 30%;
+    padding-right: 30%;
+    gap: 5px;
+
+}
+
+.logo-box{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px auto/*1fr 1fr;*/
+}
+
+.pic-profile{
+    background-color: indigo;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+.nav-link:hover {
+    color: #ff5733;
+}
+h1{
+    color: white;
+    font-family:'Indie Flower';
+}
+.img{
+    float: left;
+    max-width: 20%;
+    height: auto;
+    margin-right: 20px;
+}
+
+#banner-box{
+    background-color: rgb(17, 23, 23);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+ul{
+    list-style-type: none;
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto;
+
+    border: 2px solid grey;
+    border-radius: 10px;
+    margin: 30px;
+   
+}
+h3{
+    color: aliceblue;
+    background-color:indigo;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0%;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Poiret One';
+}
+p, h2{
+    text-align: center;
+}
+h2{
+    font-family:'Poiret One', Courier, monospace;
+}
+footer{
+    background-color: indigo;
+    color: white;
+}
