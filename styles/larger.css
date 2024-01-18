@@ -2,5 +2,11 @@
     section{
         background-color:lightpink;
     }
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
     
 }
