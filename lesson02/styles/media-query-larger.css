@@ -1,12 +1,6 @@
-@media screen and (min-width: 500px) {
-    header{
-        background-color: black;
-        color: white;
+@media screen and (min-width: 700px) {
+    section{
+        background-color:lightpink;
     }
-    main{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 45px;
-
-    }
+    
 }
