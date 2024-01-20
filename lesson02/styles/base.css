@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@200&family=Molengo&display=swap');
+
+
+h1{
+    background-color: rgb(237, 226, 242);
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+  
+}
+
+h1, h2, h3{
+    text-align: center;
+    font-family: Kodchasan, 'Lucida Sans', 'Lucida Sans Regular';
+    margin: 10px;
+}
+
+p {
+    font-family: Molengo, cursive, Courier;
+    text-align: center;
+    line-height: 2em;
+    font-size: 1em;
+    padding: 20px;
+}
+
+a {
+    color:rgb(122, 115, 115)
+}
+img{
+    display: block;
+    margin: 0 auto;
+    
+}
+img{
+    max-width: 400px;
+    width: 95%;
+    border-radius: 5px solid black; 
+}
+section{
+    display: block;
+    width: 100%;
+    margin: 0 auto;  
+}
+
+
+/*.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5 1fr);
+    padding: 50px;
+    
+}
+.card{
+    background-color: rgb(238, 233, 233);
+}
+
+img {
+    max-width: 400px;
+    width: 95%;
+    border: 3px solid grey;
+    margin: auto;
+    display: block;
+}
+section .text{
+    padding: 15px;
+    line-height: 2em;
+   
+}
+section p {
+    font-family: Molengo, cursive, Courier;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+}*/
+hr{
+    color: blueviolet;
+}
+
+footer{
+    background-color: indigo;
+    color: white;
+
+}
+
+ @media screen and (min-width: 700px) {
+    main {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+        
+    }
+    main section{
+        background-color: rgb(238, 233, 233);
+        border: 3px solid purple;
+    }
+    img{
+        border: 5px solid purple;
+    }
+}
+
+ @media screen and (min-width: 1000px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
