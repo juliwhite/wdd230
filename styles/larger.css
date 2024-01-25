@@ -4,13 +4,13 @@
     .card{
         background-color:rgb(237, 224, 226);
     }
-    nav ul {
+    .nav-list {
         display: flex;
         justify-content: space-evenly;
         padding: 2px;
         /*flex-direction: row;*/
     }
-    nav ul li {
+    .nav-list li {
         flex: 1 1 100%;
     }
     main {
