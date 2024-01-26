@@ -129,7 +129,7 @@ li{
 h1{
     padding: 10px;
     text-align: center;
-    font-family: 'Dancing Script', sans-serif;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
 }
 .card .color-schema{
     display: block;
@@ -138,4 +138,8 @@ h1{
 .card .wireframe {
     display: block;
     margin: 0 auto;
+}
+.name {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 22px;
 }
