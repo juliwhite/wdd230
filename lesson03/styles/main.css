@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Dancing+Script&family=Nunito:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #eaecdb;
+}
+
+.logo{
+    max-width: 5rem;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #859250; 
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color:#383f28;
+    font-size: 20px;
+    border: 0;
+    font-size: 1.2rem;
+}
+.open .close {
+    display: block;
+}
+
+@media screen and (max-width: 600px){
+    .open {
+        display: block;
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        /*display: none;*/
+    }
+
+    .nav {
+        position: absolute;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        background-color: #859250;
+        padding: 2rem;
+
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+footer {
+    background-color: #859250;
+    padding: 50px;
+    text-align: center;
+}
+
+.color {
+    --moss-green-50: #f6faf3;
+--moss-green-100: #eaf3e5;
+--moss-green-200: #d5e7cb;
+--moss-green-300: #a8cc94;
+--moss-green-400: #8ab672;
+--moss-green-500: #68994e;
+--moss-green-600: #537d3c;
+--moss-green-700: #436332;
+--moss-green-800: #38502b;
+--moss-green-900: #2f4225;
+--moss-green-950: #162310;
+}
+
+.card{
+    background-color: #859250;
+    width: 700px;
+    margin: 30px auto;
+    line-height: 1.5;
+    padding: 20px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+h2{
+    padding: 30px;
+    color: white;
+}
+.color-schema{
+    width: 600px;
+}
+p{
+    font-size: 22px;
+    color: #eaf3e5;
+}
+.li-1 {
+    font-family: 'Dancing Script', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+}
+.li-2 {
+    font-family: Nunito, Courier New', Courier, monospace;
+}
+.li-3 {
+    font-family: 'Cormorant Garamond', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+li{
+    font-size: 22px;
+    padding-left: 20px;
+    list-style: none;
+    line-height: 1.5;
+}
+h1{
+    padding: 10px;
+    text-align: center;
+    font-family: 'Dancing Script', sans-serif;
+}
+.card .color-schema{
+    display: block;
+    margin: 0 auto;
+}
+.card .wireframe {
+    display: block;
+    margin: 0 auto;
+}
