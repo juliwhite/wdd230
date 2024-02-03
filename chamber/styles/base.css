@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Dancing+Script&family=Nunito:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-image: url(/wdd230/chamber/images/idaho-falls.jpeg);
+    height: 340px;
+    /*width: 300px;*/
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #7ca20e;
+}
+
+.logo {
+    max-width: 5rem;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none ;
+    gap: 2rem;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Dancing Script','Courier New', Courier, monospace;
+    font-size: 22px;
+
+}
+
+button {
+    font-size: 30px;
+    background-color: #5e7c0f;
+    padding: 10px;
+    border-radius: 15px;
+    color: lightgrey;
+    
+}
+.second-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #fbfee7;
+}
+/* small view navigation */
+
+/*show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}*/
+
+#menu{
+    display: block;
+    font-size: 1.5rem;
+    border: 1px solid rgba(0,0,0,.3);
+    color:#fbfee7;
+    position: absolute;
+    left: 300px;
+    top: 50px;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.nav-list li {
+    display: none;
+    
+}
+
+/*.nav-list a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}*/
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open li {
+	display: block;
+}
+
+@media only screen and (min-width: 40em) {
+	.nav-list {
+		display: flex;
+	}
+	.nav-list li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.nav-list a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}
