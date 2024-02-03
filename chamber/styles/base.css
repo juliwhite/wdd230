@@ -8,9 +8,11 @@
 
 .container {
     background-image: url(/wdd230/chamber/images/idaho-falls.jpeg);
-    height: 340px;
+    /*height: 340px;*/
     /*width: 300px;*/
-    background-position: center;
+    width: 100%;
+    height: 40vh;
+    background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,13 +47,33 @@ header {
 
 }
 
-button {
+.hero-btn {
+    display: inline-block;
     font-size: 30px;
     background-color: #5e7c0f;
-    padding: 10px;
+    padding: 20px;
     border-radius: 15px;
-    color: lightgrey;
+    color: white;
+    text-decoration: none;
+}
+
+/*.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    /*position: relative;
+    cursor: pointer;
     
+}*/
+
+.hero-btn:hover {
+    border: 1px solid black;
+    background: #7ca20e;
+    transition: 1s;
 }
 .second-container {
     display: flex;
@@ -67,12 +89,13 @@ button {
     border: 1px solid rgba(0,0,0,.3);
     color:#fbfee7;
     position: absolute;
-    left: 300px;
+    left: 150px;
     top: 50px;
 }
 
 #menu::before {
 	content: "☰";
+    color: black;
 }
 
 #menu.open::before {
@@ -157,16 +180,21 @@ footer{
 h4{
     height: 30px;
     font-size: 18px;
+    font-family: Nunito, Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 h3{
     height: 30px;
     background-color: #e7f99d;
     text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
 }
 
 h1{
     text-align: center;
+    font-family: "Cormorant Garamond" ,  Arial, "Helvetica Neue", Helvetica, sans-serif;
+
 }
 
 
@@ -184,6 +212,9 @@ h1{
     justify-content: space-evenly;
 }
 
+.spotlights:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
 
 .company {
     /*width: 400px;
@@ -196,6 +227,11 @@ h1{
     height: 250px;
 }
 
+.company:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
 p {
     text-align: center;
+    padding: 10px;
 }
