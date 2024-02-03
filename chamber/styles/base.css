@@ -119,4 +119,83 @@ li a:hover {
 	#menu {
 		display: none;
 	}
+
+    
+    
+}
+
+footer{
+    background-color: #7ca20e;
+    text-align: center;
+    padding: 20px;
+}
+
+.second-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.event{
+    /*padding: 10px;*/
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    width: 400px;
+    height: 160px;
+    padding-bottom: 10px;
+}
+.card {
+    width: 400px;
+    height: 160px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+h4{
+    height: 30px;
+    font-size: 18px;
+}
+
+h3{
+    height: 30px;
+    background-color: #e7f99d;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+}
+
+
+
+/*.spotlights {
+    display: flex;
+    flex-direction: column;
+}*/
+.spotlights {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #fbfee7;
+    justify-content: space-evenly;
+}
+
+
+.company {
+    /*width: 400px;
+    height: 160px;*/
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 3px 3px 5px;
+    width: 400px;
+    height: 250px;
+}
+
+p {
+    text-align: center;
 }
