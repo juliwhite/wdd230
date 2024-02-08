@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Merienda&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +17,7 @@ body {
 
 h1 {
     font-size: 1.5rem;
+    font-family: Merienda, 'Courier New', Courier, monospace;
 }
 
 main {
@@ -58,6 +61,11 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+label, #favchap, button {
+    font-family: Kalam, 'Courier New', Courier, monospace;
+    font-size: 20px;
 }
 
 @media only screen and (min-width: 32.5em) {
