@@ -6,16 +6,6 @@
     box-sizing: border-box;
 }
 
-/*.container {
-    background-image: url(/wdd230/chamber/images/idaho-falls.jpeg);
-    width: 100%;
-    height: 40vh;
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}*/
-
 .container {
     position: relative;
     background: url(/wdd230/chamber/images/if.jpeg) no-repeat center;
@@ -40,10 +30,7 @@ header {
 .nav-list {
     /*display: flex;*/
     list-style-type: none ;
-    /*gap: 2rem;*/
-
     margin: 0 auto;
-    /*max-width: 800px;*/
 }
 
 .nav-list li a{
@@ -133,8 +120,6 @@ header {
 }
 
 li a:hover {
-    /*background-color: #fbfee7;
-    color: black;*/
     color: gold;
     text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
 }
@@ -203,18 +188,20 @@ h3{
     line-height: 30px;
 }
 
+hr{
+    border: 1px ridge #5e7c0f;
+}
+
 h1{
     text-align: center;
     font-family: "Cormorant Garamond" ,  Arial, "Helvetica Neue", Helvetica, sans-serif;
-
+    margin: 0;
+    padding-top: 30px;
+    background-color: #fbfee7;
+    color: black;
+    text-shadow: 2px 4px 8px  #000000;
 }
 
-
-
-/*.spotlights {
-    display: flex;
-    flex-direction: column;
-}*/
 .spotlights {
     display: flex;
     align-items: center;
@@ -224,9 +211,9 @@ h1{
     justify-content: space-evenly;
 }
 
-.spotlights:hover {
+/* .spotlights:hover {
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
-}
+} */
 
 .company {
     /*width: 400px;
@@ -263,17 +250,48 @@ p {
 .dark-mode{
 	background-color: #000;
 	color: #fff;
-	border-color: red; 
-    h3, .second-container, .spotlights{
-        background-color: darkgrey;
-    }
-    .event, .card, .company, header, footer{
-        background-color: #000;
-    }
-    h3 {
-        background-color: #000;
-    }
-    li a {
-        color: white;
-    }
+	border-color: #eee; 
+
+}
+
+.dark-mode header{
+    color: white;
+    background-color: #000;
+}
+
+.dark-mode h1{
+    color: white;
+    background-color: #000;
+}
+
+.dark-mode footer{
+    color: white;
+    background-color: #000;
+}
+
+.dark-mode header a{
+    color: white;
+}
+
+.dark-mode .second-container{
+    background-color: #000;
+}
+
+.dark-mode .spotlights{
+    background-color: #000;
+}
+
+.dark-mode .event{
+    color: #000;
+    background: #d9d9de;
+}
+
+.dark-mode .card{
+    color: #000;
+    background-color: #d9d9de;
+}
+
+.dark-mode .company {
+    color: #000;
+    background-color: #d9d9de;
 }
