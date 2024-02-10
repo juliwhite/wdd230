@@ -95,8 +95,8 @@ header {
     border: 1px solid rgba(0,0,0,.3);
     color:#fbfee7;
     position: absolute;
-    left: 150px;
-    top: 50px;
+    left: 170px;
+    top: 66px;
 }
 
 #menu::before {
@@ -149,8 +149,6 @@ li a:hover {
 		display: none;
 	}
 
-    
-    
 }
 
 footer{
@@ -174,6 +172,7 @@ footer{
     width: 400px;
     height: 160px;
     padding-bottom: 10px;
+    margin: 10px;
 }
 .card {
     width: 400px;
@@ -231,6 +230,7 @@ h1{
     box-shadow: 3px 3px 5px;
     width: 400px;
     height: 250px;
+    margin: 10px;
 }
 
 .company:hover {
@@ -240,4 +240,30 @@ h1{
 p {
     text-align: center;
     padding: 10px;
+}
+
+/* Add dark mode */
+
+#mode {
+	position: absolute;
+	top: 1rem;
+	left: 10rem;
+	font-size: 3rem;
+	cursor: pointer;
+	font-size: 1.5rem;
+}
+
+.dark-mode{
+	background-color: #000;
+	color: #fff;
+	border-color: red; 
+    h3, .second-container, .spotlights{
+        background-color: darkgrey;
+    }
+    .event, .card, .company, header, footer{
+        background-color: #000;
+    }
+    h3 {
+        background-color: #000;
+    }
 }
