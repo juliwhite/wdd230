@@ -13,7 +13,7 @@
     .nav-list li {
         flex: 1 1 100%;
     }
-    main {
+    .cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
     
@@ -30,3 +30,4 @@
     }
     
 }
+

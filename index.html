@@ -26,7 +26,7 @@
     <header>
         <div class="logo-box">
             <section class="pic-profile">
-                <img class="img" src="images/profile-photo.jpg" alt="profile picture">
+                <img class="img" src="images/profile-photo.webp" alt="profile picture">
                 <h1>Julieta White</h1>
                 <a id="menu" href="#"></a>
             </section>
@@ -45,31 +45,46 @@
     </header>
 
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/Idaho-Falls-Temple1.webp" media="(max-width: 400px)">
+                <source srcset="images/Idaho-Falls-Temple3.webp" media="(max-width: 960px)">
+                <img src="images/if-Temple.webp" alt="Idaho Falls Temple photo" width="1700" height="700"> <!--width=900 height=400-->
+            </picture>
+            <div class="herolabel">
+                <p>Idaho Falls Temple</p>
+            </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <hr>
-        <section class="card">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li>01: <a href="#">Holy Layout</a> | <a href="#">JS Pen</a></li>
-                <li>02: <a href="#">Media Query</a> | <a href="#">Design Principles Document</a></li>
-                <li>03: <a href="lesson03/combinator.html">combinator</a> | <a href="https://codepen.io/Juli-White/pen/wvOrdNZ">CSS Pseudo-elements</a> | <a href="https://codepen.io/Juli-White/pen/VwRMWeB">Responsive Menu</a> | <a href="lesson03/chamber-site-plan.html">Chamber Site Plan Document</a></li>
-                <li>04: <a href="https://codepen.io/Juli-White/pen/qBvYJBY">CSS Pseudo-Classes</a></li>
-                <li>05: <a href="lesson05/bom.html">DOM Manipulation</a></li>
-                <li>06: </li>
-                <li>07: </li>
-                <li>08: </li>
-                <li>09: </li>
-                <li>10: </li>
-            </ul>
-        </section>
-        <section class="card">
-            <h3>Information</h3>
-            <div id="info">
-                <p>Mendoza, Argentina</p>
-                <p>🌞 40C - Sunshine</p>
-                <p>Page Visits: 0</p>
-            </div>
-        </section>
+        <div class="cards">
+            <section class="card">
+                <h3>Learning Activities</h3>
+                <ul>
+                    <li>01: <a href="#">Holy Layout</a> | <a href="#">JS Pen</a></li>
+                    <li>02: <a href="#">Media Query</a> | <a href="#">Design Principles Document</a></li>
+                    <li>03: <a href="lesson03/combinator.html">combinator</a> | <a
+                            href="https://codepen.io/Juli-White/pen/wvOrdNZ">CSS Pseudo-elements</a> | <a
+                            href="https://codepen.io/Juli-White/pen/VwRMWeB">Responsive Menu</a> | <a
+                            href="lesson03/chamber-site-plan.html">Chamber Site Plan Document</a></li>
+                    <li>04: <a href="https://codepen.io/Juli-White/pen/qBvYJBY">CSS Pseudo-Classes</a></li>
+                    <li>05: <a href="lesson05/bom.html">DOM Manipulation</a></li>
+                    <li>06: <a href="lesson06/webpImage.html">WebP</a> | <a href="lesson06/responsive-images.html">Responsive Images: srcset</a></li>
+                    <li>07: </li>
+                    <li>08: </li>
+                    <li>09: </li>
+                    <li>10: </li>
+                </ul>
+            </section>
+            <section class="card">
+                <h3>Information</h3>
+                <div id="info">
+                    <p>Mendoza, Argentina</p>
+                    <p>🌞 40C - Sunshine</p>
+                    <p>Page Visits: 0</p>
+                </div>
+            </section>
+        </div>
     </main>
     <div class="google-map">
         <iframe
