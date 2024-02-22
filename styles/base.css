@@ -159,6 +159,7 @@ footer{
 .google-map {
     padding-bottom: 50%;
     position: relative;
+    border:0;
 }
 .google-map iframe {
     height: 100%;
