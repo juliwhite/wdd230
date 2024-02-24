@@ -297,3 +297,139 @@ p {
     color: #000;
     background-color: #d9d9de;
 }
+
+/* Chamber Discovery Page W07*/
+.discovery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*background-color: #ebf1e7;*/
+    background: linear-gradient(to bottom, #597049, #ebf1e7);
+}
+
+.discovery-event {
+    background-color: #e4ffd9;
+    border: 1px solid #0c3201;
+    padding: 40px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.discovery-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+    
+}
+
+
+
+.picture-container img {
+    /*display: flex;
+    flex-direction: column;*/
+    padding: 15px;
+}
+
+.discovery-pic img{
+    
+    display: block;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* Calendar*/
+.wrapper {
+    background: #fff;
+}
+
+.wrapper .current-day .icons {
+    display: flex;
+    align-items: center;
+    padding: 25px 30px 10px;
+    justify-content: space-between;
+    
+}
+
+.current-day {
+    background: #ebf1e7;
+    height: 50px;
+    
+}
+
+.calendar {
+    padding: 20px;
+}
+
+.calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+}
+
+.calendar .days {
+    margin-bottom: 20px;
+}
+
+.calendar li {
+    color: #333;
+    width: calc(100% / 7);
+    font-size: 1.07rem;
+}
+
+.calendar .weeks li {
+    font-weight: 500;
+    cursor: default;
+}
+
+.calendar .days li {
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 30px;
+}
+
+.days li.inactive {
+    color: #aaa;
+}
+
+.days li.active {
+    color: #fff;
+}
+
+.days li::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.days li.active::before {
+    background: #9B59B6;
+}
+
+.days li:not(.active):hover::before {
+    background: #f2f2f2;
+}
+
+@media only screen and (max-width: 790px){
+    .discovery-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        /*grid-gap: 0.2rem;*/
+    }
+
+    .discovery-pic {
+        background-color: #8da385;
+        
+    }
+}

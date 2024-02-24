@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julieta White - Idaho Falls Chamber of Commerce</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development">
+    <meta name="author" content="Julieta White course assignment Chamber of Commerce">
+    <!--Normalize-->
+    <!--<link rel="stylesheet" href="/wdd230/styles/normalize.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!--Google icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Add favicon-->
+    <link rel="icon" href="images/favicon.ico">
+    <!--Social media meta-->
+    <meta property="og:title" content="Chamber of Commerce - Julieta White">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://imgur.com/a/2AdKGJu">
+    <meta property="og:url" content="https://www.churchofjesuschrist.org/?lang=eng">
+</head>
+
+<body>
+    <div id="mode">
+        💡/🕶️
+    </div>
+    
+    <header>
+        <img class="logo" src="images/logo.png" alt="logo">
+        <button id="menu"></button>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Information</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="discovery-container">
+            <div class="discovery-sidebar">
+                <div class="discovery-event">
+                    <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+                </div>
+                <section class="discovery-event">
+                    <h2>Current Population</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae corporis illo nobis ratione incidunt
+                        delectus facere ea, culpa aliquam expedita aut velit rem alias laborum voluptatum minima, iste, sequi
+                        unde!Lorem</p>
+                </section>
+                <section class="discovery-event">
+                    <h2>Unemployment Rate</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, libero! Ipsum ex aut earum vel
+                        ratione dicta dolores tenetur officiis natus, eos placeat perferendis quibusdam praesentium corporis,
+                        itaque ipsam non!</p>
+                </section>
+                <section class="discovery-event">
+                    <h2>Community Help</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis laborum neque unde necessitatibus, ut
+                        illo consequuntur, nisi aperiam natus sapiente dolores quidem nesciunt illum eligendi consectetur
+                        commodi inventore eveniet eos.</p>
+                </section>
+                <section class="discovery-event">
+                    <h2>Weather</h2>
+                    <hr>
+                    <h4>🌧️ 35°F</h4>
+                    <h4>Cloud with Rain</h4>
+                    <h4>Humidity: 88%</h4>
+                    <h4>Wind Chill: <span id="feeltemp"></span> °F</h4>
+                </section>
+                <section class="discovery-event">
+                    <div class="wrapper">
+                        <h2 class="current-day">February 2023</h2>
+                        <div class="icons">
+                            <span id="prev" class="material-symbols-outlined">chevron_left</span>
+                            <span id="next" class="material-symbols-outlined">chevron_right</span>
+                        </div>
+                    <div class="calendar">
+                        <ul class="weeks">
+                            <li>Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                        </ul>
+                        <ul class="days"></ul>
+
+                    </div>
+                </div>
+                </section>
+            </div>
+            <section class="discovery-pic">
+                <div class="picture-container">
+                    <img class="picture" src="images/local1.webp" alt="view of a landscape" width="200" height="400">
+                    <img class="picture" src="images/local2.webp" alt="motorcicle" width="600" height="400">
+                    <img class="picture" src="images/local3.webp" alt="air balloon" width="600" height="400">
+                    <img class="picture" src="images/local4.webp" alt="person climbing" width="400" height="600">
+                    <img class="picture" src="images/local5.webp" alt="people outdoors" width="600" height="400">
+                    <img class="picture" src="images/local6.webp" alt="person sitting" width="600" height="400">
+                </div>
+            </section>
+        </div>
+        
+        <!--<div class="hero">
+            <picture>
+                <source srcset="images/wdd230-smal-org.webp" media="(max-width: 500px)">
+                <source srcset="images/wdd230-medium-org.webp" media="(max-width: 1000px)">
+                <img src="images/wdd230-large-org.webp" alt="picture of people in a meeting" width="1700" height="700">
+            </picture>
+
+            <a href="" class="hero-btn">Join Us</a>
+        </div>
+        <div class="second-container">
+            <section class="event">
+                <h3>Sunnyside school "Family Night"</h3>
+                <hr>
+                <h4>📆 2024-02-14</h4>
+                <h4>📍 165 Cobblestone Ln</h4>
+                <h4>🕔 6PM-9PM</h4>
+        
+            </section>
+            <section class="card">
+                <h3>Weather</h3>
+                <hr>
+                <h4>🌧️ 35°F</h4>
+                <h4>Cloud with Rain</h4>
+                <h4>Humidity: 88%</h4>
+                <h4>Wind Chill: <span id="feeltemp"></span> °F</h4>
+            </section>
+        </div>
+        <h1>Spotlights of Idaho Falls Chamber of Commerce</h1>
+            <section class="spotlights">
+                
+                <div class="company">
+                    <h3>Support our members</h3>
+                    <hr>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sunt, corporis perspiciatis odio debitis
+                        autem ullam assumenda nam deserunt aspernatur sed illo magni mollitia esse numquam, totam enim obcaecati
+                        at.
+                    </p>
+        
+                </div>
+                <div class="company">
+                    <h3>Thank you to our partners</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur quas molestias nulla sapiente,
+                        nobis a amet voluptas distinctio natus soluta labore saepe repellendus doloremque voluptatem accusamus
+                        cupiditate similique in ea.</p>
+        
+                </div>
+                <div class="company">
+                    <h3>Future Tech</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi labore esse magnam animi, reiciendis ea
+                        quia iure distinctio eum qui! Ea quibusdam iure illum cum, veniam nihil enim ab cumque.</p>
+        
+                </div>
+        
+            </section>-->
+        
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span><br>
+            Julieta White - Chamber of Commerce Project for WDD 230<br>
+            Idaho Falls - Idaho</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="scripts/get-dates.js"></script>
+</body>
+</html>
