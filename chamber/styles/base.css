@@ -84,7 +84,7 @@ header {
 #menu{
     display: block;
     font-size: 1.5rem;
-    border: 1px solid rgba(0,0,0,.3);
+    border: 1px solid black;
     color:#fbfee7;
     position: absolute;
     left: 170px;
@@ -323,6 +323,11 @@ p {
     
 }
 
+.picture-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 
 
 .picture-container img {
@@ -333,11 +338,14 @@ p {
     
     display: block;
     margin: 0 auto;
+    
 }
 
 img {
-    width: 100%;
+    width: 70%;
     height: auto;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .big-heading {
@@ -348,10 +356,17 @@ img {
 
 }
 
+.out-heading {
+    line-height: 20px;
+    padding-bottom: 20px;
+}
+
 /* Calendar*/
 .wrapper {
     background: #fff;
 }
+
+
 
 .wrapper .current-day .icons {
     display: flex;
@@ -362,8 +377,9 @@ img {
 }
 
 .current-day {
-    background: #ebf1e7;
+    background: #afc2a3;
     height: 50px;
+    padding-top: 10px;
     
 }
 
