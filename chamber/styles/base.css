@@ -191,7 +191,8 @@ h3{
 }
 
 hr{
-    border: 1px ridge #5e7c0f;
+    border: 1px ridge black;
+    
 }
 
 h1{
@@ -201,7 +202,7 @@ h1{
     padding-top: 30px;
     background-color: #fbfee7;
     color: black;
-    text-shadow: 2px 4px 8px  #000000;
+    text-shadow: 2px 4px 8px  #cfcaca;
 }
 
 .spotlights {
@@ -303,12 +304,12 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     /*background-color: #ebf1e7;*/
-    background: linear-gradient(to bottom, #597049, #ebf1e7);
+    background: linear-gradient(to bottom, #afc2a3, #ebf1e7);
 }
 
 .discovery-event {
-    background-color: #e4ffd9;
-    border: 1px solid #0c3201;
+    background-color: #f6f8f5;
+    border: 1px solid black;
     padding: 40px;
     border-radius: 5px;
     text-align: center;
@@ -325,8 +326,6 @@ p {
 
 
 .picture-container img {
-    /*display: flex;
-    flex-direction: column;*/
     padding: 15px;
 }
 
@@ -339,6 +338,14 @@ p {
 img {
     width: 100%;
     height: auto;
+}
+
+.big-heading {
+    padding-top: 10px;
+    line-height: 60px;
+    /*background-color: #ebf1e7;*/
+    background: linear-gradient(to bottom, #d7e1d1, #f6f8f5);
+
 }
 
 /* Calendar*/
