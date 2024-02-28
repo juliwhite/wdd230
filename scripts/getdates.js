@@ -47,9 +47,5 @@ numVisists++;
 // Store the new visit total into localStorage, key = numVisitsLs
 localStorage.setItem("numVisistsLs", numVisists);
 
-
-
-
-
 // View localStorage data using the Application panel in the browser's DevTools. 
 
