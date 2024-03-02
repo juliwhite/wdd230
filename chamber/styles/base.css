@@ -475,14 +475,14 @@ h4 {
 
 .join legend {
     /*margin: 0.5rem;*/
-    color: #3a183a;
+    color: #364522;
     padding: 0 .5rem;
 }
 
 .join label {
     display: block;
     padding-top: 1rem;
-    color:#693250;
+    color:#364522;
     font-size: .9rem;
 }
 
@@ -539,7 +539,7 @@ label span {
 
 .join input[type="submit"] {
     border: none;
-    background-image: linear-gradient(#964070, #3e192d);
+    background-image: linear-gradient(#62812f, #3f5024);
     color: white;
     border-radius: 6px;
     padding: .8rem;
