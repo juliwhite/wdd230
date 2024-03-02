@@ -42,10 +42,14 @@ main.classList.toggle('dark-mode');
 /*********************************************
  * Calculate the Wind Chill Temperature W06
  *********************************************/
+let speed = 15;
+let temp = 40;
 
-
+let feelTemp = document.getElementById("feeltemp");
+feelTemp.innerHTML = windChill(speed, temp);
 
 function windChill(speed, temp) {
+	let feelTemp = document.getElementById("feeltemp");
 
 	// Compute the windchill
 	let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
@@ -59,11 +63,6 @@ function windChill(speed, temp) {
 	return wc;
 }
 
-let speed = 15;
-let temp = 40;
-
-let feelTemp = document.getElementById("feeltemp");
-feelTemp.innerHTML = windChill(speed, temp);
 
 
 
