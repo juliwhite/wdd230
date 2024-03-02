@@ -49,7 +49,3 @@ localStorage.setItem("numVisistsLs", numVisists);
 
 // View localStorage data using the Application panel in the browser's DevTools. 
 
-/** FORM WEEK 8 JOIN CHAMBER */
-const subTime = document.getElementById("date");
-
-subTime.value = new Date();
