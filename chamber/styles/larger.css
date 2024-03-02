@@ -17,4 +17,15 @@
     img {
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     }
+
+    /* form W08*/
+    .radio-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-content:space-around;
+        margin-left: 50px;
+        margin-right: 80px;
+        column-gap: 20px;
+    
+    }
 }
