@@ -1,3 +1,14 @@
+/*document.addEventListener("DOMContentLoaded", function() {
+	let speed = 15;
+	let temp = 40;
+
+	let feelTemp = document.getElementById("feeltemp");
+	feelTemp.innerHTML = windChill(speed, temp);
+
+})*/
+
+
+
 // set current year in footer
 const currentDate = new Date();
 document.querySelector('#year').textContent = currentDate.getFullYear();
@@ -32,11 +43,6 @@ main.classList.toggle('dark-mode');
  * Calculate the Wind Chill Temperature W06
  *********************************************/
 
-let speed = 15;
-let temp = 40;
-
-let feelTemp = document.getElementById('feeltemp');
-feelTemp.textContent = windChill(speed, temp);
 
 
 function windChill(speed, temp) {
@@ -51,9 +57,15 @@ function windChill(speed, temp) {
 	wc = (wc > temp) ? temp : wc;
 
 	return wc;
-	
-
 }
+
+let speed = 15;
+let temp = 40;
+
+let feelTemp = document.getElementById("feeltemp");
+feelTemp.innerHTML = windChill(speed, temp);
+
+
 
 /* Count Visits to the page W07*/
 const visitsDisplay = document.querySelector(".visits");
