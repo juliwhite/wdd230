@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Dekko&display=swap');
+
+/*@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap');*/
+
+header,
+main,
+footer {
+  margin: 1rem;
+  position: relative;
+}
+
+h1 {
+    color: #63384f;
+    font-family: 'Akaya Kanadaka', 'Courier New', Courier, monospace;
+    border-bottom: 1px solid #573855 ;
+    text-shadow: 0 0 15px #9a5f98 ;
+    width: 60%;
+}
+
+main {
+    margin-left: 2rem;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    background-color: #f6edf3;
+    border: 1px solid #753f5d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: auto;
+    max-width: 325px;
+    box-shadow: 0 0 30px #777;
+    height: 200px;
+    border: 1px solid #333;
+}
+
+fullName {
+    font-family: 'Akaya Kanadaka', 'Courier New', Courier, monospace;
+    padding: 10px;
+    color: #4e273c;
+    font-size: 20px;
+}
+
+footer {
+    border-top: 1px solid #555;
+    padding: 20px;
+    background-color: #e1c0d7;
+    font-family:Dekko, 'Courier New', Courier, monospace;
+  }
+  
