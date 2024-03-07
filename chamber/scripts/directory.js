@@ -28,4 +28,31 @@ main.classList.toggle('dark-mode');
 
 });
 
-const url = "https://juliwhite.github.io/wdd230/data/members.json";
+const baseURL = "https://juliwhite.github.io/wdd230/";
+
+const url = "https://juliwhite.github.io/wdd230/chamber/data/members.json";
+
+let result = null;
+
+async function getMembers() {
+    const response = await fetch(url);
+
+    //check if the fetch was sucessful. 
+    if(response.ok) {
+        // the API will send us JSON...but we have to convert the response before we can use it
+        // .json() also returns a promise...so we await it as well.
+        const data = await response.json();
+        //console.log(data);
+        displayMembers(data);
+
+    }
+}
+
+getMembers(url);
+
+const menu = document.querySelector(".menu");
+
+/*function displayMembers(data) {
+    result = data;
+    console.log("first: ", result)
+}*/

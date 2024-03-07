@@ -13,30 +13,9 @@ async function getLinks() {
   
 getLinks();
 
+
+
 /*const displayLinks = (lessons) => {
-    lessons.forEach((weeks) => {
-
-        //Create li element
-        const list = document.createElement('li');
-
-        //Create anchor tag.
-        const anchorTag = document.createElement('a');
-        
-
-        list.textContent = `Week ${weeks.lesson}: `; //;${week.links}`;
-       
-        anchorTag.href = `#${weeks.url} | ${weeks.title}`;
-
-        anchorTag.textContent = weeks;
-
-        //apend the anchor tag to the li.
-        list.appendChild(anchorTag);
-        
-        lists.appendChild(list);
-    });
-}*/
-
-const displayLinks = (lessons) => {
     lessons.forEach((weeks) => {
         const list = document.createElement('li');
         list.textContent = `Week ${weeks.lesson}: `;
@@ -48,6 +27,30 @@ const displayLinks = (lessons) => {
 
             //append anchor to li
             list.appendChild(anchorTag);      
+        });
+        //append the li to the lists
+        lists.appendChild(list);
+    });
+}*/
+
+
+const displayLinks = (lessons) => {
+    lessons.forEach((weeks) => {
+        const list = document.createElement('li');
+        list.textContent = `Week ${weeks.lesson}: `;
+
+        weeks.links.forEach((week, index) => {
+            const anchorTag = document.createElement('a');
+            anchorTag.href = `${week.url}`;
+            anchorTag.textContent = `${week.title} `;
+
+            //append anchor to li
+            list.appendChild(anchorTag); 
+            
+            if(index < weeks.links.length -1 && list.childElementCount > 0){
+                let verticalBar = document.createTextNode(' | ');
+                list.appendChild(verticalBar)
+            }
         });
         //append the li to the lists
         lists.appendChild(list);
