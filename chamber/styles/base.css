@@ -343,7 +343,7 @@ p {
     
 }
 
-img {
+.picture {
     width: 70%;
     height: auto;
     /*margin-left: 20px;
@@ -579,3 +579,101 @@ label span {
 .position:required:invalid {
     border: 1px solid red;
 }
+
+
+/* WEEK 9*/
+
+main {
+    background-color: #f6f7ee;
+}
+.menu {
+	margin: auto;
+	border: 1px solid rgba(185, 167, 167, 0.1);
+	padding: 0.5rem;
+	
+	text-align: center;
+}
+
+.menu button {
+	padding: 1rem;
+	font-weight: 700;
+    background-color: #bdc690;
+}
+
+section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color:#f6f7ee;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.cards section {
+	text-align: center;
+}
+
+.cards img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.cards section > * {
+	margin: 0.1rem;
+}
+
+.cards h4 {
+	font-family: "Nunito", "Caveat", cursive;
+    padding-bottom: 3rem;
+    color: #1a1c16;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	margin: 0;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h4 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: #dee1c6;
+}
+
+section h4 {
+	font-size: 1.5rem;
+}
+
+section p {
+	font-weight: 600;
+	font-size: medium;
+    color: #495338;
+}
+
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.90rem;
+	color: rgb(53, 53, 131);
+	letter-spacing: 1.1pt;
+}
+

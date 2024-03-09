@@ -34,6 +34,7 @@ main.classList.toggle('dark-mode');
 
 const baseURL = "https://juliwhite.github.io/wdd230/";
 
+//const url = "https://juliwhite.github.io/wdd230/chamber/data/members.json";
 const url = "https://juliwhite.github.io/wdd230/chamber/data/members.json";
 
 let result = null;
@@ -55,24 +56,26 @@ async function getMembers() {
 getMembers(url);
 //getMembers();
 
-const menu = document.querySelector(".menu");
+const cards = document.querySelector(".cards");
 
 const displayMembers = (members) => {
 
     members.forEach((member) => {
+        //let article = document.createElement('article');
         let card = document.createElement('section');
         let imagen = document.createElement('img');
-        let memberName = document.createElement('h3');
+        let memberName = document.createElement('h4');
         let address = document.createElement('p');
         let phone = document.createElement('p');
-        let website = document.createElement('p');
+        let website = document.createElement('a');
         let membership = document.createElement('p');
 
         imagen.setAttribute('src', member.image);
         imagen.setAttribute('alt', `Image of member ${member.name}`);
         imagen.setAttribute('loading', 'lazy');
-        imagen.setAttribute('width', '400');
-        imagen.setAttribute('height', '300');
+        imagen.setAttribute('width', '200');
+        imagen.setAttribute('height', '100');
+        website.setAttribute('href', `${member.website}`);
 
         memberName.textContent = `${member.name}`;
         address.textContent = `${member.address}`;
@@ -87,12 +90,24 @@ const displayMembers = (members) => {
         card.appendChild(website);
         card.appendChild(membership);
 
-        menu.appendChild(card);
-
+        cards.appendChild(card);
+    
     });
 }
 
-/*function displayMembers(data) {
-    result = data;
-    console.log("first: ", result)
-}*/
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector(".cards");
+
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
