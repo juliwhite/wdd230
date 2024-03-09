@@ -28,6 +28,10 @@ main.classList.toggle('dark-mode');
 
 });
 
+/**
+ * Directory Activity Week 9
+ */
+
 const baseURL = "https://juliwhite.github.io/wdd230/";
 
 const url = "https://juliwhite.github.io/wdd230/chamber/data/members.json";
@@ -43,14 +47,50 @@ async function getMembers() {
         // .json() also returns a promise...so we await it as well.
         const data = await response.json();
         //console.log(data);
-        displayMembers(data);
+        displayMembers(data.members);
 
     }
 }
 
 getMembers(url);
+//getMembers();
 
 const menu = document.querySelector(".menu");
+
+const displayMembers = (members) => {
+
+    members.forEach((member) => {
+        let card = document.createElement('section');
+        let imagen = document.createElement('img');
+        let memberName = document.createElement('h3');
+        let address = document.createElement('p');
+        let phone = document.createElement('p');
+        let website = document.createElement('p');
+        let membership = document.createElement('p');
+
+        imagen.setAttribute('src', member.image);
+        imagen.setAttribute('alt', `Image of member ${member.name}`);
+        imagen.setAttribute('loading', 'lazy');
+        imagen.setAttribute('width', '400');
+        imagen.setAttribute('height', '300');
+
+        memberName.textContent = `${member.name}`;
+        address.textContent = `${member.address}`;
+        phone.textContent = `${member.phone}`;
+        website.textContent = `${member.website}`;
+        membership.textContent = `Membership Level: ${member.membership}`;
+
+        card.appendChild(imagen);
+        card.appendChild(memberName);
+        card.appendChild(address);
+        card.appendChild(phone);
+        card.appendChild(website);
+        card.appendChild(membership);
+
+        menu.appendChild(card);
+
+    });
+}
 
 /*function displayMembers(data) {
     result = data;

@@ -3,58 +3,58 @@
         {
             "name": "Juan Benavides",
             "address": "345 Pocono",
-            "phone number": "208-569-7645",
-            "website url": "https://google.com",
-            "image": "wdd230-smal-org.webp",
-            "membership level": "gold"
+            "phone": "208-569-7645",
+            "website": "https://google.com",
+            "image": "images/member1.webp",
+            "membership": "gold"
         },
         {
             "name": "Juan Benavides",
             "address": "345 Pocono",
-            "phone number": "208-569-7645",
-            "website url": "https://google.com",
-            "image": "wdd230-smal-org.webp",
-            "membership level": "gold"
+            "phone": "208-569-7645",
+            "website": "https://google.com",
+            "image": "images/member2.webp",
+            "membership": "gold"
         },
         {
-            "name": "Juan Benavides",
-            "address": "345 Pocono",
-            "phone number": "208-569-7645",
-            "website url": "https://google.com",
-            "image": "wdd230-smal-org.webp",
-            "membership level": "gold"
+            "name": "GW Transportations",
+            "address": "444 11Street",
+            "phone": "208-569-7777",
+            "website": "https://google.com",
+            "image": "images/member3.webp",
+            "membership": "bronze"
         },
         {
-            "name": "Juan Benavides",
-            "address": "345 Pocono",
-            "phone number": "208-569-7645",
-            "website url": "https://google.com",
-            "image": "wdd230-smal-org.webp",
-            "membership level": "gold"
+            "name": "Maria Garcia",
+            "address": "345 Sunnyside",
+            "phone": "208-569-8765",
+            "website": "https://google.com",
+            "image": "images/member4.webp",
+            "membership": "silver"
         },
         {
-            "name": "Juan Benavides",
-            "address": "345 Pocono",
-            "phone number": "208-569-7645",
-            "website url": "https://google.com",
-            "image": "wdd230-smal-org.webp",
-            "membership level": "gold"
+            "name": "Carla Biance",
+            "address": "567 Silverado",
+            "phone": "208-569-4509",
+            "website": "https://google.com",
+            "image": "images/member5.webp",
+            "membership": "bronze"
         },
         {
-            "name": "Juan Benavides",
-            "address": "345 Pocono",
-            "phone number": "208-569-7645",
-            "website url": "https://google.com",
-            "image": "wdd230-smal-org.webp",
-            "membership level": "gold"
+            "name": "Hnos. Hernandez",
+            "address": "346 Holmes",
+            "phone": "208-569-0985",
+            "website": "https://google.com",
+            "image": "images/member6.webp",
+            "membership": "gold"
         },
         {
-            "name": "Juan Benavides",
-            "address": "345 Pocono",
-            "phone number": "208-569-7645",
-            "website url": "https://google.com",
-            "image": "wdd230-smal-org.webp",
-            "membership level": "gold"
+            "name": "Marce Hommer",
+            "address": "23 Utah Ave.",
+            "phone": "208-569-7611",
+            "website": "https://google.com",
+            "image": "images/member7.webp",
+            "membership": "silver"
         }
         
     ]
