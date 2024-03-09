@@ -367,6 +367,13 @@ h4 {
     padding-top: 20px;
 }
 
+figcaption {
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
 /* Calendar*/
 .wrapper {
     background: #fff;
@@ -405,7 +412,8 @@ h4 {
 }
 
 .calendar li {
-    color: #333;
+    color: #0e0e0e;
+    font-weight: bold;
     width: calc(100% / 7);
     font-size: 1.07rem;
 }
@@ -423,11 +431,11 @@ h4 {
 }
 
 .days li.inactive {
-    color: #aaa;
+    color: #524949;
 }
 
 .days li.active {
-    color: #fff;
+    color: #ab6666;
 }
 
 .days li::before {
