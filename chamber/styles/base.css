@@ -431,7 +431,8 @@ figcaption {
 }
 
 .days li.inactive {
-    color: #524949;
+    color: #443b3b;
+    font-weight: 100;
 }
 
 .days li.active {
