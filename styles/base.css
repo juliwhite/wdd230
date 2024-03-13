@@ -213,7 +213,22 @@ footer{
     font-family: "Poiret One", Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+/* Week 10 Weather API css*/
 
+#weather-icon, figcaption {
+    text-align: center;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.visitas {
+    padding-top: 20px;
+    color: #683348;
+}
 
 
 
