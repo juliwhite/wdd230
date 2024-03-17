@@ -32,10 +32,10 @@
         <button id="menu"></button>
         <nav class="nav">
             <ul class="nav-list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Information</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="directory.html">Directory</a></li>
             </ul>
         </nav>
 
@@ -64,9 +64,15 @@
             <section class="card">
                 <h3>Weather</h3>
                 <hr>
-                <h4>🌧️ 35°</h4>
-                <h4>Wind: 15</4>
-                <h4>Wind Chill: <span id="feeltemp"></span> °F</h4>
+                <div class="weather-container">
+                    <!--<p>🌧️ 35°</p>
+                    <p>Wind: 15</p>-->
+                    <p class="idaho-temp" >Temperature in Idaho Falls is <span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                </div>
+                <p>Wind Chill: <span id="feeltemp"></span> °F</p>
             </section>
         </div>
         <h1>Spotlights of Idaho Falls Chamber of Commerce</h1>

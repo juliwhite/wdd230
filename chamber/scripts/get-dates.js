@@ -53,4 +53,36 @@ function windChill(speed, temp) {
 	return wc;
 }
 
+/**
+ * Chamber Project - Home Page Enhancement - W10
+ * Add dynamic content to the chamber project home page.
+ * 1-a. current temperature.
+ *   b. current weather description.
+ *   c. three days temperature forecast
+ * 2-Add a banner.
+ * * Banner should only appear on Mondays, Tuesdays, and Wednesday. 
+ * * Enable the user the ability to close the banner ❌.
+ */
 
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
+
+const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=43.49&lon=-112.04&appid=46743c701fc291a73f9a2147e8db2a4f&units=imperial';
+
+async function apiFetch() {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data); // testing
+            //displayResults(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+apiFetch();

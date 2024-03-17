@@ -81,7 +81,8 @@ function displayResults(data) {
     tem = Math.round(data.main.temp);
     //currentTemp.innerHTML = `${data.main.temp}&deg;F`;
     currentTemp.innerHTML = `${tem}&deg;F`;
-    const iconsrc = `https://openweathermap.org/img/w/10n.png`;
+    //const iconsrc = `https://openweathermap.org/img/w/10n.png`;
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description.toUpperCase();
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', `weather icon`);

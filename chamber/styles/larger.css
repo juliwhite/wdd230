@@ -31,7 +31,7 @@
 }
 
 @media (min-width: 600px) {
-    img:hover {
+    .picture:hover {
         /*filter: brightness(70%);
         transition: filter 0.5s ease;*/
         transform: scale(0.9);
