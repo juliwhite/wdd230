@@ -68,15 +68,15 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
-const url = 'https://api.openweathermap.org/data/2.5/forecast?lat=43.49&lon=-112.04&appid=46743c701fc291a73f9a2147e8db2a4f&units=imperial';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=43.49&lon=-112.04&appid=46743c701fc291a73f9a2147e8db2a4f&units=imperial';
 
 async function apiFetch() {
     try {
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data); // testing
-            //displayResults(data);
+            //console.log(data); // testing
+            displayCurrentWeather(data);
         } else {
             throw Error(await response.text());
         }
@@ -86,3 +86,31 @@ async function apiFetch() {
 }
 
 apiFetch();
+
+function displayCurrentWeather(data) {
+    let temper = Math.round(data.main.temp);
+    currentTemp.innerHTML = `${temper}&deg;F`;
+    //currentTemp.innerHTML = `${tem}&deg;F`;
+    //const iconsrc = `https://openweathermap.org/img/w/10n.png`;
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    let desc = data.weather[0].description;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', `weather icon`);
+    captionDesc.textContent = `${desc}`;
+}
+
+/* Banner*/
+// Get the banner element
+const banner = document.getElementById('banner');
+
+// Check if it's Monday, Tuesday, or Wednesday
+const today = new Date().getDay(); // 0 (Sunday) to 6 (Saturday)
+if (today >= 1 && today <= 3) { // Monday (1), Tuesday (2), Wednesday (3)
+    banner.style.display = 'block';
+}
+
+// Close the banner when the close button is clicked
+const closeBtn = document.getElementById('close-btn');
+closeBtn.addEventListener('click', () => {
+    banner.style.display = 'none';
+});

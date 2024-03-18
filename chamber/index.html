@@ -42,7 +42,11 @@
     </header>
 
     <main>
-        
+        <div id="banner" class="banner">
+            <span id="close-btn" class="close-btn">&times;</span>
+            <p>We would like you to invite you to attend a meeting on Wednesday at 7pm.</p>
+        </div>
+
         <div class="hero">
             <picture>
                 <source srcset="images/wdd230-smal-org.webp" media="(max-width: 500px)">
@@ -52,13 +56,15 @@
 
             <a href="" class="hero-btn">Join Us</a>
         </div>
+        
+
         <div class="second-container">
             <section class="event">
-                <h3>Sunny school "Family Night"</h3>
+                <h3>Sunny School "Family Night"</h3>
                 <hr>
                 <h4>📆 2024-02-14</h4>
-                <h4>📍 165 Cobblestone Ln</h4>
-                <h4>🕔 6PM-9PM</h4>
+                <h4>📍 165 Cobblestone</h4>
+                <h4>🕔 6pm-9pm</h4>
         
             </section>
             <section class="card">
@@ -67,10 +73,16 @@
                 <div class="weather-container">
                     <!--<p>🌧️ 35°</p>
                     <p>Wind: 15</p>-->
-                    <p class="idaho-temp" >Temperature in Idaho Falls is <span id="current-temp"></span></p>
-                    <figure>
-                        <img id="weather-icon" src="" alt="">
-                        <figcaption></figcaption>
+                    <div class="weather-today">
+                        <div class="idaho-temp">
+                            <h5>Idaho Falls <span id="current-temp"></span></h5>
+                            <figure>
+                                <img id="weather-icon" src="" alt="">
+                                <figcaption></figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                
                 </div>
                 <p>Wind Chill: <span id="feeltemp"></span> °F</p>
             </section>
