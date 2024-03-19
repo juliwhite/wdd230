@@ -370,7 +370,7 @@ h4 {
     padding-top: 20px;
 }
 
-figcaption {
+.fig {
     text-align: center;
     font-style: italic;
     margin-top: 20px;
@@ -705,10 +705,20 @@ section a {
 
 /* week 10 Weather Forecast*/
 .weather-today {
-    background: #c4cdd4;
+    background: #d1dbe2;
     border-radius: 5px;
     margin-top: 5px;
 }
+
+.forecast {
+    margin-top: 10px;
+}
+
+.forecast p {
+    color: #26270c;
+    font-family: Nunito, Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
 
 
 
