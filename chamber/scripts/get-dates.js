@@ -99,6 +99,73 @@ function displayCurrentWeather(data) {
     captionDesc.textContent = `${desc}`;
 }
 
+
+const urlForecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=43.49&lon=-112.04&appid=46743c701fc291a73f9a2147e8db2a4f&units=imperial';
+fetch(urlForecast)
+    .then(response => response.json())
+    .then(data => {
+        const threeDaysForecast = data.list.filter(x => x.dt_txt.includes('15:00:00'));
+        //console.log(threeDaysForecast);
+        let day = 0;
+        const weekdays = ['Sunday', 'Monday', 'Tueday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        threeDaysForecast.forEach(forecast => {
+            const d = new Date(forecast.dt_txt);
+            document.getElementById(`dayofweek${day + 1}`).textContent = weekdays[d.getDay()];
+            document.getElementById(`forecast${day + 1}`).textContent = forecast.main.temp;
+            day++;
+        });
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+/*async function getThreeDaysForecast() {
+    const urlForecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=43.49&lon=-112.04&appid=46743c701fc291a73f9a2147e8db2a4f&units=imperial';
+    try {
+        const response = await fetch(urlForecast);
+        const data = await response.json();
+
+        //Filter the forecast data to get only the next three days. 
+        const currenDate = new Date();
+        const nextThreeDays = [];
+        data.list.forEach(forecast => {
+            const forecastDate = new Date(forecast.dt * 1000);
+            const timeDifference = forecastDate.getTime() - currenDate.getTime();
+            const oneDayInMilliseconds = 24 * 60 * 60 * 1000; 
+            if (timeDifference >= 0 && timeDifference < (3 * oneDayInMilliseconds)) {
+                nextThreeDays.push(forecast);
+            }
+        });
+
+        const forecastElement = document.getElementById('forecast');
+        nextThreeDays.forEach(forecast => {
+            const date = new Date(forecast.dt * 1000); // convert timespamp to date.
+            const day = date.toLocaleDateString('en-US', {weekday:'long'});
+            const temperature = forecast.main.temp;
+            const description = forecast.weather[0].description;
+
+            forecastElement.innerHTML += `<div>
+            <p><strong>${day}<strong></p>
+            <p>Temp: ${temperature}F</p>
+            <p>${description}</p>
+            </div>`;
+        });
+
+    } catch(error) {
+        console.log('Error fetching data', error);
+    } 
+}
+
+getThreeDaysForecast();*/
+
 /* Banner*/
 // Get the banner element
 const banner = document.getElementById('banner');

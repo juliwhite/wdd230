@@ -163,7 +163,7 @@ footer{
     border-radius: 5px;
     text-align: center;
     width: 400px;
-    height: 300px;
+    height: 350px;
     padding-bottom: 10px;
     margin: 10px;
     border: 1px solid greenyellow;
@@ -171,7 +171,7 @@ footer{
 }
 .card {
     width: 400px;
-    height: 300px;
+    height: 350px;
     background-color: white;
     border-radius: 5px;
     text-align: center;
@@ -704,6 +704,11 @@ section a {
 
 
 /* week 10 Weather Forecast*/
+.weather-today {
+    background: #c4cdd4;
+    border-radius: 5px;
+    margin-top: 5px;
+}
 
 
 
