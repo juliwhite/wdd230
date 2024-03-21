@@ -90,8 +90,6 @@ apiFetch();
 function displayCurrentWeather(data) {
     let temper = Math.round(data.main.temp);
     currentTemp.innerHTML = `${temper}&deg;F`;
-    //currentTemp.innerHTML = `${tem}&deg;F`;
-    //const iconsrc = `https://openweathermap.org/img/w/10n.png`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
@@ -100,23 +98,28 @@ function displayCurrentWeather(data) {
 }
 
 
-const urlForecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=43.49&lon=-112.04&appid=46743c701fc291a73f9a2147e8db2a4f&units=imperial';
-fetch(urlForecast)
-    .then(response => response.json())
-    .then(data => {
+// Add forecast for 3 days only. 
+
+document.addEventListener('DOMContentLoaded', async function () {
+    try {
+        const urlForecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=43.49&lon=-112.04&appid=46743c701fc291a73f9a2147e8db2a4f&units=imperial';
+        const response = await fetch(urlForecast);
+        const data = await response.json();
+
         const threeDaysForecast = data.list.filter(x => x.dt_txt.includes('15:00:00'));
-        //console.log(threeDaysForecast);
-        let day = 0;
-        const weekdays = ['Sunday', 'Monday', 'Tueday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-        threeDaysForecast.forEach(forecast => {
+
+        const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+        threeDaysForecast.slice(0, 3).forEach((forecast, index) => {
             const d = new Date(forecast.dt_txt);
-            document.getElementById(`dayofweek${day + 1}`).textContent = weekdays[d.getDay()];
-            document.getElementById(`forecast${day + 1}`).textContent = forecast.main.temp;
-            day++;
+            const roundTemp = Math.round(forecast.main.temp); // this round the temperature
+            document.getElementById(`dayofweek${index + 1}`).textContent = weekdays[d.getDay()];
+            document.getElementById(`forecast${index + 1}`).textContent = roundTemp; // Display only two digits
         });
-    });
-
-
+    } catch (error) {
+        console.error('Error fetching weather forecast:', error);
+    }
+});
 
 
 
