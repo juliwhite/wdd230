@@ -11,10 +11,29 @@ document.querySelector('#lastModified').textContent = lastModif;
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.nav-list');
 
+const isHidden = hamButton.style.display === "none";
+
+
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
+
+    
 });
+
+
+if (isHidden) {
+    // If button is hidden, set aria-hidden attribute to true
+    hamButton.setAttribute("aria-hidden", "true");
+} else {
+    // If button is visible, set aria-label attribute
+    hamButton.setAttribute("aria-hidden", "false");
+    hamButton.setAttribute("aria-label", "button is visible");
+}
+
+// Toggle visibility of the button
+hamButton.style.display = isHidden ? "block" : "none";
+
 
 /**************************
  * Add dark mode. 
