@@ -21,7 +21,7 @@ hamButton.addEventListener('click', () => {
     
 });
 
-
+// Check if the hamButton is currently hidden or visible. 
 if (isHidden) {
     // If button is hidden, set aria-hidden attribute to true
     hamButton.setAttribute("aria-hidden", "true");
