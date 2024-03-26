@@ -729,10 +729,12 @@ section a {
 }
 
 .forecast p {
-    color: #26270c;
+    color: #0c0c06;
     font-family: Nunito, Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
-
+.weather-hoy {
+    color: black;
+}
 
 
