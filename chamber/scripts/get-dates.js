@@ -140,54 +140,6 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
 });
 
-
-
-
-
-
-
-
-
-
-/*async function getThreeDaysForecast() {
-    const urlForecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=43.49&lon=-112.04&appid=46743c701fc291a73f9a2147e8db2a4f&units=imperial';
-    try {
-        const response = await fetch(urlForecast);
-        const data = await response.json();
-
-        //Filter the forecast data to get only the next three days. 
-        const currenDate = new Date();
-        const nextThreeDays = [];
-        data.list.forEach(forecast => {
-            const forecastDate = new Date(forecast.dt * 1000);
-            const timeDifference = forecastDate.getTime() - currenDate.getTime();
-            const oneDayInMilliseconds = 24 * 60 * 60 * 1000; 
-            if (timeDifference >= 0 && timeDifference < (3 * oneDayInMilliseconds)) {
-                nextThreeDays.push(forecast);
-            }
-        });
-
-        const forecastElement = document.getElementById('forecast');
-        nextThreeDays.forEach(forecast => {
-            const date = new Date(forecast.dt * 1000); // convert timespamp to date.
-            const day = date.toLocaleDateString('en-US', {weekday:'long'});
-            const temperature = forecast.main.temp;
-            const description = forecast.weather[0].description;
-
-            forecastElement.innerHTML += `<div>
-            <p><strong>${day}<strong></p>
-            <p>Temp: ${temperature}F</p>
-            <p>${description}</p>
-            </div>`;
-        });
-
-    } catch(error) {
-        console.log('Error fetching data', error);
-    } 
-}
-
-getThreeDaysForecast();*/
-
 /* Banner*/
 // Get the banner element
 const banner = document.getElementById('banner');
@@ -203,3 +155,63 @@ const closeBtn = document.getElementById('close-btn');
 closeBtn.addEventListener('click', () => {
     banner.style.display = 'none';
 });
+
+
+/**
+ * Week 11
+ */
+
+const urlMembers = "https://juliwhite.github.io/wdd230/chamber/data/members.json";
+
+
+async function getMembers() {
+    const response = await fetch(urlMembers);
+
+    //check if the fetch was sucessful. 
+    if(response.ok) {
+        // the API will send us JSON...but we have to convert the response before we can use it
+        // .json() also returns a promise...so we await it as well.
+        const data = await response.json();
+        //console.log(data);
+        displayGoldMembers(data.members); //call displayGoldMembers with members data.
+
+    }
+}
+
+// Call teh function to fetch and display gold members
+getMembers();
+
+
+
+const displayGoldMembers = (members) => {
+    const spotlight = document.querySelector(".spotlights");
+        members.forEach((member) => {
+            if (member.membership === "gold") {
+                let memberDiv = document.createElement('div');
+                memberDiv.classList.add('company');
+
+                let name = document.createElement('p');
+                name.textContent = `${member.name}`;
+
+                let phone = document.createElement('p');
+                phone.textContent = `${member.phone}`;
+
+                let website = document.createElement('a');
+                website.textContent = 'Website';
+                website.href = member.website;
+                website.target = '_blank';
+
+                let image = document.createElement('img');
+                image.src = member.image;
+                image.alt = member.name;
+
+                memberDiv.appendChild(name);
+                memberDiv.appendChild(phone);
+                memberDiv.appendChild(website);
+                memberDiv.appendChild(image);
+
+                spotlight.appendChild(memberDiv);
+            }
+        });
+}
+

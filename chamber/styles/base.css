@@ -229,9 +229,23 @@ h1{
     text-align: center;
     box-shadow: 3px 3px 5px;
     width: 400px;
-    height: 250px;
+    height: 350px;
     margin: 10px;
 }
+
+
+
+/* code added for week 11 (line 238-246)*/
+.company {
+    display: flex;
+    flex-direction: column;
+}
+
+.company a, .company img {
+    margin-top: 10px; /* Optional: Add margin for spacing between elements */
+}
+
+
 
 .company:hover {
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
