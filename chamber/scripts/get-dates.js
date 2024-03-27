@@ -18,14 +18,29 @@ hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 
-    // Check if navigation is open
+    /*// Check if navigation is open
     if (navigation.classList.contains('open')) {
         // If open, set the button text to "Close"
         hamButton.textContent = "i";
     } else {
         // If closed, set the button text to "Menu"
-        hamButton.textContent = " ";
+        hamButton.textContent = "i";
+    }*/
+
+
+
+    // Check if the hamButton is currently hidden or visible. 
+    if (isHidden) {
+        // If button is hidden, set aria-hidden attribute to true
+        hamButton.setAttribute("aria-hidden", "true");
+    } else {
+        // If button is visible, set aria-label attribute
+        hamButton.setAttribute("aria-hidden", "false");
+        hamButton.setAttribute("aria-label", "button is visible");
     }
+
+    // Toggle visibility of the button
+    //hamButton.style.display = isHidden ? "block" : "none";
 });
 
 // Check if the hamButton is currently hidden or visible. 
