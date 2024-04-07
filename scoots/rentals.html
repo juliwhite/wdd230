@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Motor Scooter Company</title>
+    <meta name="author" content="Julieta White">
+    <meta name="description" content="Scoots is a company located in the coast of Mexico and offers motor scooter rental for turists."> 
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="icon" href="images/favicon.ico"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <meta property="og:url" content="https://google.com"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Scooters rentals company"/>
+    <meta property="og:description" content="Rental services of scooters in the coast of Mexico."/>
+    <meta property="og:image" content="https://drive.google.com/file/d/1Sw85HmXMutbrVF207VMfeXwt9mO1wrkG/view?usp=sharing"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Scoots</div>
+            <div id="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="mainMenu">
+                <!--<li><a href="#">Scoots</a></li>-->
+                <li><a href="#">Rentals</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Rental Prices</h1>
+        <table id="prices-table">
+            <thead>
+                <tr>
+                    <th colspan="6">Max Rental Pricing</th>
+                </tr>
+                <tr>
+                    <th colspan="2">🛵</th>
+                    <th colspan="2">Reservation</th>
+                    <th colspan="2">Wal-In</th>
+                </tr>
+                <tr>
+                    <th>Rental Type</th>
+                    <th>Max. Personas</th>
+                    <th>Half Day (3 hrs)</th>
+                    <th>Full Day</th>
+                    <th>Half Day (3 hrs)</th>
+                    <th>Full Day</th>
+                </tr>
+            </thead>
+            <tbody id="prices-body">
+                
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <div>&copy;<span id="year"></span> Scoots 🛵</div>
+        <ul class="social">
+            <li class="list"><a class="social-icon" href="https://www.facebook.com/YourPageName" aria-label="Visit Example Website" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li class="list"><a class="social-icon" href="https://twitter.com/YourTwitterHandle" aria-label="Visit Example Website" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li class="list"><a class="social-icon" href="https://www.instagram.com/YourInstagramUsername" aria-label="Visit Example Website" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+    </footer>
+    <script src="scripts/rental.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

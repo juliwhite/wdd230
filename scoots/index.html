@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Motor Scooter Company</title>
+    <meta name="author" content="Julieta White">
+    <meta name="description" content="Scoots is a company located in the coast of Mexico and offers motor scooter rental for turists."> 
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="icon" href="images/favicon.ico"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <meta property="og:url" content="https://google.com"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Scooters rentals company"/>
+    <meta property="og:description" content="Rental services of scooters in the coast of Mexico."/>
+    <meta property="og:image" content="https://drive.google.com/file/d/1Sw85HmXMutbrVF207VMfeXwt9mO1wrkG/view?usp=sharing"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Scoots</div>
+            <div id="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="mainMenu">
+                <!--<li><a href="#">Scoots</a></li>-->
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <div class="message-container" id="high-temp-msg">
+                Today's Max Temperature is <span id="high-temp"></span>°F <span class="close-btn" onclick="closeMessage()">❌</span>
+            </div>
+            <section class="action">
+                <h1>Enjoy the Experience</h1>
+                <img class="foto" src="images/rsz_scooter.webp" alt="picture of a scooter" loading="lazy">
+                <a href="" class="hero-btn">Reserve Now!</a>
+            </section>
+        </div>
+        <section class="container">
+            <div class="card">
+                <img class="card-image" src="images/metro-scooter.webp" alt="picture of scooter">
+                <h2>Honda Metro Scooter</h2>
+            </div>
+            <div class="card">
+                <img class="card-image" src="images/dio-scooter.webp" alt="picture of scooter">
+                <h2>Honda Dio Scooter</h2>
+            </div>
+            <div class="card">
+                <img class="card-image" src="images/pcx150-scooter.webp" alt="picture of scooter" width="270">
+                <h2>Honda PCX150 Scooter</h2>
+            </div>
+            <div class="card">
+                <img class="card-image" src="images/pioneerATV.webp" alt="picture of scooter" width="270">
+                <h2>Honda Pioneer ATV</h2>
+            </div>
+            <div class="card">
+                <img class="card-image" src="images/jeepwrangler.webp" alt="picture of scooter">
+                <h2>Jeep Wrangler - 4door</h2>
+            </div>
+            <div class="card">
+                <img class="card-image" src="images/jeep-twodoors.webp" alt="picture of scooter">
+                <h2>Jeep Wrangler - 2door</h2>
+            </div>
+        </section>
+        <div class="sky-background">
+            <h3>Cozumel - Mexico</h3>
+            <div class="wheater">
+                <h3>Current Weather</h3>
+                <p id="current-temp"></p>
+                <p id="current-humidity"></p>
+                <div id="next-day-forecast">
+                    <hr>
+                    <h3>Tomorrow's Forecast</h3>
+                    <p id="next-day-temp"></p>
+                    <p id="next-day-description"></p>
+                    <img id="next-day-icon" src="" alt="Weather Icon">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>&copy;<span id="year"></span> Scoots 🛵</div>
+        <ul class="social">
+            <li class="list"><a class="social-icon" href="https://www.facebook.com/YourPageName" aria-label="Visit Example Website" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li class="list"><a class="social-icon" href="https://twitter.com/YourTwitterHandle" aria-label="Visit Example Website" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li class="list"><a class="social-icon" href="https://www.instagram.com/YourInstagramUsername" aria-label="Visit Example Website" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+    </footer>
+    <script src="scripts/main.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
