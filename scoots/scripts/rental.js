@@ -30,8 +30,8 @@ async function loadPrices() {
             row.insertCell().textContent = item.RentalType;
             row.insertCell().textContent = item.MaxPersons;
             row.insertCell().textContent = item.HalfDay3Hrs.Price;
-            row.insertCell().textContent = item.HalfDayFull.Price;
             row.insertCell().textContent = item.HalfDay3Hrs.FullDayPrice;
+            row.insertCell().textContent = item.HalfDayFull.Price;
             row.insertCell().textContent = item.HalfDayFull.FullDayPrice;
         });
     } catch (error) {
