@@ -257,6 +257,7 @@ footer {
 table {
     width: 80%;
     margin: 30px auto;
+    background-color: var(--white);
 }
 
 table, th, td {
@@ -266,6 +267,7 @@ table, th, td {
 
 tr:first-child th {
     background-color: var(--nav);
+    color: black;
 }
 
 th {
@@ -275,6 +277,7 @@ th {
 
 th, td {
     padding: 5px 13px;
+   
 }
 
 td {
