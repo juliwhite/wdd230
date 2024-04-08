@@ -35,30 +35,40 @@
         </nav>
     </header>
     <main>
-        <h1 class="rental-heading">Rental Prices</h1>
-        <table id="prices-table">
-            <thead>
-                <tr>
-                    <th colspan="6">Max Rental Pricing</th>
-                </tr>
-                <tr>
-                    <th colspan="2">🛵</th>
-                    <th colspan="2">Reservation</th>
-                    <th colspan="2">Wal-In</th>
-                </tr>
-                <tr>
-                    <th>Rental Type</th>
-                    <th>Max. Personas</th>
-                    <th>Half Day (3 hrs)</th>
-                    <th>Full Day</th>
-                    <th>Half Day (3 hrs)</th>
-                    <th>Full Day</th>
-                </tr>
-            </thead>
-            <tbody id="prices-body">
-                
-            </tbody>
-        </table>
+        <form method="get" action="rentalSubmit.html" class="rental-form">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Phone <input type="tel" name="phone" placeholder="2081235454"></label>
+                <label>Email* <input type="email" name="email" placeholder="juli@gmail.com" required></label>
+                <label>Country* <input type="text" name="country" required></label>
+                <label>State* <input type="text" name="state" required></label>
+                <label>Cruise Line <input type="text" name="cruise"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Rental Details</legend>
+                <label>Rental Date <input type="date" name="rentalDate"></label>
+                <label>Rental Type
+                    <select name="rental">
+                        <option value="">Please Select</option>
+                        <option value="metro">Honda Metro Scooter</option>
+                        <option value="dio">Honda Dio Scooter</option>
+                        <option value="pcx150">Honda PCX150 Scooter</option>
+                        <option value="pioneer">Honda Pioneer ATV</option>
+                        <option value="jeep4door">Jeep Wrangler -4 door with a/c</option>
+                        <option value="jeep2door">Jeep Wrangler -2 doorr</option>
+                    </select>
+                </label>
+                <label>Number <input type="number" name="people"></label>
+                <div>Rental Period</div>
+                <label><input type="radio" name="period" value="halfDay"> Half Day (3 hrs)</label>
+                <label><input type="radio" name="period" value="fullDay"> Full Day</label>
+                <label for="comments">Special Acomodations</label>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            </fieldset>
+            <input type="submit" value="Submit Rental">
+        </form>
     </main>
     <footer>
         <div>&copy;<span id="year"></span> Scoots 🛵</div>
@@ -68,7 +78,7 @@
             <li class="list"><a class="social-icon" href="https://www.instagram.com/YourInstagramUsername" aria-label="Visit Example Website" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
         </ul>
     </footer>
-    <script src="scripts/rental.js"></script>
+    <script src="scripts/reservation.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

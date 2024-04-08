@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots - Motor Scooter Company</title>
+    <meta name="author" content="Julieta White">
+    <meta name="description" content="Scoots is a company located in the coast of Mexico and offers motor scooter rental for turists."> 
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="icon" href="images/favicon.ico"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <meta property="og:url" content="https://google.com"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Scooters rentals company"/>
+    <meta property="og:description" content="Rental services of scooters in the coast of Mexico."/>
+    <meta property="og:image" content="https://drive.google.com/file/d/1Sw85HmXMutbrVF207VMfeXwt9mO1wrkG/view?usp=sharing"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Scoots</div>
+            <div id="menu-toggle" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="mainMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rentals.html">Rentals</a></li>
+                <li><a href="reservations.html">Reservations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--<div class="google-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92622.62750113965!2d-112.11628006133331!3d43.492798880201576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5354594e739512b5%3A0x2311c9fc094c49c9!2sIdaho%20Falls%2C%20ID!5e0!3m2!1sen!2sus!4v1706143223820!5m2!1sen!2sus"
+                width="600" height="450" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>-->
+        <section class="contacto">
+            <h1 class="contacto-heading">Contact Us</h1>
+            <div class="contactForm">
+                <form method="get" action="rentalSubmit.html" class="rental-form">
+                    <fieldset>
+                        <legend>Get in Touch</legend>
+                        <label>Name* <input type="text" name="name" placeholder="Your Name" required></label>
+                        <label>Email* <input type="text" name="email" placeholder="juli@gmail.com" required></label>
+                        <label for="comments">Your Comment</label>
+                        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                    </fieldset>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59789.690814087204!2d-86.9834694390168!3d20.51214182951669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e58330a673659%3A0x9cedf516c7d86e9a!2sSan%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!5e0!3m2!1sen!2sus!4v1712539294921!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.7234073510053!2d-86.9734337!3d20.476550499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e57491a71c81d%3A0x6933058e58e0ee3d!2sPuerta%20Maya%20Cruise%20Ship%20Maritime%20Terminal!5e0!3m2!1sen!2sus!4v1712539534493!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contactMethod">
+                <div class="cont">
+                    <ion-icon name="location-outline" class="contactIcon"></ion-icon>
+                    <article class="text">
+                        <h2 class="contact-heading">Locations:</h2>
+                        <p class="para">2234 Calle 1 Nephi</p>
+                        <p class="para">3234 Calle Alma</p>
+                    </article>
+                </div>
+                <div class="cont">
+                    <ion-icon name="mail-outline" class="contactIcon"></ion-icon>
+                    <article class="text">
+                        <h2 class="contact-heading">Email</h2>
+                        <p class="para">juliwhite@gmail.com</p>
+                    </article>
+                </div>
+                <div class="cont">
+                    <ion-icon name="call-outline" class="contactIcon"></ion-icon>
+                    <article class="text">
+                        <h2 class="contact-heading">Phone</h2>
+                        <p class="para">+1(207)456-8978</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>&copy;<span id="year"></span> Scoots 🛵</div>
+        <ul class="social">
+            <li class="list"><a class="social-icon" href="https://www.facebook.com/YourPageName" aria-label="Visit Example Website" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li class="list"><a class="social-icon" href="https://twitter.com/YourTwitterHandle" aria-label="Visit Example Website" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li class="list"><a class="social-icon" href="https://www.instagram.com/YourInstagramUsername" aria-label="Visit Example Website" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+    </footer>
+    <script src="scripts/contact.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
