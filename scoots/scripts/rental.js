@@ -47,8 +47,30 @@ async function getImgages() {
     const response = await fetch(url);
     if (response.ok) {
         const data = await response.json();
-        console.log(data);
+        //console.log(data);
+        displayImages(data)
     }
 }
 
 getImgages();
+
+const displayImages = (data) => {
+    data.forEach((image) => {
+        let card = document.createElement('section');
+        let imagen = document.createElement('img');
+        let typeScooter = document.createElement('h4');
+
+        typeScooter.textContent = `${image.RentalType}`;
+
+        imagen.setAttribute('src', image.img);
+        imagen.setAttribute('alt', `image of ${data.RentalType}`),
+        imagen.setAttribute('loading', 'lazy');
+        imagen.setAttribute('width', '440');
+        imagen.setAttribute('height', '350');
+
+        card.appendChild(imagen);
+        card.appendChild(typeScooter);
+
+        cards.appendChild(card);
+    });
+}
