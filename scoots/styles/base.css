@@ -183,6 +183,8 @@ h1 {
     /*box-shadow: 0 15px 15px rgba(0, 0, 0, 0.342);*/
 }
 
+
+
 .close-btn {
     cursor: pointer;
     padding-left: 20px;
@@ -423,6 +425,12 @@ td {
     .contactForm {
         grid-column: 1 / span 2; /* Align to the left column */
       }
+
+    .formulario {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
 }
 
 /* Rental images*/
@@ -431,7 +439,7 @@ td {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-section {
+.section-img {
     margin: 0.25rem;
     padding: 0.65rem;
     border: 1px solid var(--wine);
@@ -442,13 +450,13 @@ section {
     background-color: #f9f7f7;
 }
 
-h4 {
+.my-h4 {
     margin: 0;
     padding: 10px;
     color: var(--wine);
 }
 
-img {
+.my-img {
     width: auto;
     max-width: 320px;
     box-shadow: 0 0 30px #777;
@@ -456,3 +464,45 @@ img {
     border: 1px solid var(--nav);
     border-radius: 6px;
 }
+
+/* Agreement*/
+.agreement {
+    max-width: 300px;
+    height: 500px;
+    background-color: #f7f2f2;
+    color: var(--wine);
+    padding: 40px 30px;
+    border-radius: 8px;
+    margin: 20px auto; /*10px;*/
+    border: 1px solid var(--wine);
+
+}
+
+.text-term {
+    padding: 0 20px;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.text-term h2 {
+    text-transform: uppercase;
+}
+
+.text-term span {
+    font-weight: bold;
+}
+
+.btn-agreement {
+    padding: 20px 20px;
+}
+
+.btn-agree {
+    width: 100px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.text-head {
+    padding: 10px;
+}
+

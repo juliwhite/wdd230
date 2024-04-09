@@ -60,8 +60,12 @@ const displayImages = (data) => {
         let imagen = document.createElement('img');
         let typeScooter = document.createElement('h4');
 
+        card.setAttribute('class', 'section-img');
+
+        typeScooter.setAttribute('class', 'my-h4');
         typeScooter.textContent = `${image.RentalType}`;
 
+        imagen.setAttribute('class', 'my-img');
         imagen.setAttribute('src', image.img);
         imagen.setAttribute('alt', `image of ${data.RentalType}`),
         imagen.setAttribute('loading', 'lazy');
@@ -70,6 +74,7 @@ const displayImages = (data) => {
 
         card.appendChild(imagen);
         card.appendChild(typeScooter);
+        //card.appendChild(card);
 
         cards.appendChild(card);
     });
