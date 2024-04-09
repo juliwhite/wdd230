@@ -10,7 +10,7 @@
         "Price": "$25",
         "FullDayPrice": "$35"
       },
-      "img": "metro-scooter.webp"
+      "img": "https://juliwhite.github.io/wdd230/scoots/images/metro-scooter.webp"
     },
     {
       "RentalType": "Honda Dio Scooter",
@@ -23,7 +23,7 @@
         "Price": "$35",
         "FullDayPrice": "$45"
       },
-      "img": "https://juliwhite.github.io/wdd230/scoots/images/metro-scooter.webp"
+      "img": "https://juliwhite.github.io/wdd230/scoots/images/dio-scooter.webp"
     },
     {
       "RentalType": "Honda PCX150 Scooter",
@@ -36,7 +36,7 @@
         "Price": "$45",
         "FullDayPrice": "$55"
       },
-      "img": "pcx150-scooter.webp"
+      "img": "https://juliwhite.github.io/wdd230/scoots/images/pcx150-scooter.webp"
     },
     {
       "RentalType": "Honda Pioneer ATV",
@@ -49,7 +49,7 @@
         "Price": "$60",
         "FullDayPrice": "$80"
       },
-      "img": "pioneerATV.webp"
+      "img": "https://juliwhite.github.io/wdd230/scoots/images/pioneerATV.webp"
     },
     {
       "RentalType": "Jeep Wrangler - 4 door with a/c",
@@ -62,7 +62,7 @@
         "Price": "$85",
         "FullDayPrice": "$125"
       },
-      "img": "jeepwrangler.webp"
+      "img": "https://juliwhite.github.io/wdd230/scoots/images/jeepwrangler.webp"
     },
     {
       "RentalType": "Jeep Wrangler - 2 door",
@@ -75,6 +75,6 @@
         "Price": "$70",
         "FullDayPrice": "$90"
       },
-      "img": "jeep-twodoors.webp"
+      "img": "https://juliwhite.github.io/wdd230/scoots/images/jeep-twodoors.webp"
     }
   ]
