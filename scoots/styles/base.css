@@ -442,12 +442,12 @@ td {
 .section-img {
     margin: 0.25rem;
     padding: 0.65rem;
-    border: 1px solid var(--wine);
+    /*border: 1px solid var(--wine);*/
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 6px;
-    background-color: #f9f7f7;
+    /*background-color: #f9f7f7;*/
 }
 
 .my-h4 {
@@ -461,7 +461,7 @@ td {
     max-width: 320px;
     box-shadow: 0 0 30px #777;
     height: 200px;
-    border: 1px solid var(--nav);
+    border: 1px solid var(--wine);
     border-radius: 6px;
 }
 
